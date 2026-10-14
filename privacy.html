@@ -16,7 +16,7 @@
 
   <div class="lede">
     <p><strong>Garanty keeps everything on your phone.</strong> There is no account, no server and no analytics. Nothing you enter — not a receipt, a photo, a name or a phone number — is ever sent to us, because there is nowhere for it to be sent.</p>
-    <p>The only company Garanty talks to at all is Google, and only to confirm whether you have an active subscription.</p>
+    <p>This version sells nothing, so the app does not even open the store connection a paid version would need. No part of Garanty contacts a server, and no data about you reaches us or anyone else.</p>
   </div>
 
   <h2>1. Who this policy is from</h2>
@@ -49,7 +49,7 @@
   <ul>
     <li>Language, list or grid preference, and your chosen reminder time</li>
     <li>Whether you have finished the introduction</li>
-    <li>Whether your subscription is currently active, and how many of your free receipts you have used</li>
+    <li>How many receipts you have created against the free allowance</li>
   </ul>
 
   <p>Android’s automatic backup is switched off for Garanty, so none of this is copied into your Google account backup. It exists on the one device you entered it on.</p>
@@ -76,21 +76,20 @@
       <tr><td>Notifications</td><td>To show your warranty reminders. You can refuse it; the rest of the app still works.</td></tr>
       <tr><td>Run after restart</td><td>Android clears scheduled reminders when the phone restarts. This lets Garanty put them back.</td></tr>
       <tr><td>Vibrate</td><td>So a reminder can vibrate.</td></tr>
-      <tr><td>Internet, network state, billing</td><td>Added automatically by Google’s Play Billing library, which handles subscriptions.</td></tr>
+      <tr><td>Internet, network state, billing</td><td>Pulled in by Google’s Play Billing library, which is bundled but switched off in this release. Nothing in the app uses them.</td></tr>
     </tbody>
   </table>
-  <p>Garanty’s own code makes no network requests at all. The internet permission appears in the app because the Google billing library requires it, not because the app sends anything. We mention this because the permission list on its own would suggest otherwise.</p>
+  <p>Garanty’s own code makes no network requests at all. The internet permission is listed because the bundled Google billing library declares it, not because the app sends anything — and in this release that library is never even started. We mention this because the permission list on its own would suggest otherwise.</p>
 
-  <h2>6. Subscriptions and payment</h2>
-  <p>Garanty Pro is sold through Google Play. <strong>The entire payment happens inside Google’s purchase sheet, not inside Garanty.</strong> We never see and never receive your name, email address, card number, billing address or any part of the transaction.</p>
-  <p>What Garanty receives back from Google is a single fact: whether this Google account has an active subscription. That answer is cached on your device so the app still knows you have paid when you are offline. There is no server behind Garanty that validates purchases, and the app sends no identifier of yours anywhere.</p>
-  <p>Google’s handling of the purchase is covered by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+  <h2>6. Payment, and the absence of it</h2>
+  <p>Garanty is free. There is no subscription, no in-app purchase and no payment of any kind, so the app never asks for a card, an address or a billing detail, and no payment information about you exists for us to hold or lose.</p>
+  <p>The Google Play Billing library is still bundled inside the app, which is why the permission list mentions billing. In this release it is never started: no store client is created, no purchase is queried, and no connection to Google is opened on your behalf. If paid plans are introduced later, this policy will be updated before they ship.</p>
 
   <h2>7. Reminders</h2>
   <p>Reminders are composed and scheduled entirely on your device by Android itself. There is no push notification service, no message passes through a server, and the text of a reminder — which includes the item name — never leaves your phone.</p>
 
   <h2>8. Links that leave the app</h2>
-  <p>Garanty can open three links in your browser or in the Play Store app: these terms, this policy, and your subscription settings. Once a link opens, you are on that site or in that app, and its own privacy policy applies.</p>
+  <p>This release does not open any external links from inside the app. If a future version does, you leave Garanty at that point and the destination’s own privacy policy applies.</p>
 
   <h2>9. Children</h2>
   <p>Garanty is a general-audience app for keeping track of your own purchases, and it is not directed at children under 13. It asks for an age during setup so that it can fill in a receipt’s buyer details; like everything else, that answer stays on the device and is never transmitted.</p>
@@ -102,7 +101,7 @@
     <li><strong>Uninstall Garanty</strong>, and everything it stored goes with it — profile, receipts and photos.</li>
   </ul>
   <p>Because nothing was ever transmitted, uninstalling genuinely is the end of it. There is no copy on a server for us to delete afterwards.</p>
-  <p>One thing deletion does not undo: the count of free receipts you have used. That count records receipts created, not receipts currently held, so deleting a receipt does not return a free slot. See the <a href="terms.html">Terms of Service</a>.</p>
+  <p>One thing deletion does not undo: the count of receipts you have created against the free allowance. That count records receipts created, not receipts currently held, so deleting a receipt does not return a slot. See the <a href="terms.html">Terms of Service</a>.</p>
 
   <h2>11. Your rights</h2>
   <p>Privacy laws such as the GDPR and the CCPA give you the right to see, correct, export and erase the personal data a company holds about you.</p>
